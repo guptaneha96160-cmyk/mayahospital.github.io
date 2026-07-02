@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Maya Hospital | Dr. Neha Gupta - Skin, Hair & Laser Clinic</title>
+    <style>
+        :root {
+            --primary: #0077b6;
+            --secondary: #00b4d8;
+            --dark: #2b2d42;
+            --light: #f8f9fa;
+            --accent: #e63946;
+        }
+        * { box-sizing: border-box; margin: 0; padding: 0; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; }
+        body { background-color: var(--light); color: var(--dark); line-height: 1.6; }
+        
+        /* Navigation */
+        header { background: white; padding: 15px 5%; display: flex; justify-content: space-between; align-items: center; box-shadow: 0 2px 5px rgba(0,0,0,0.1); position: sticky; top: 0; z-index: 100; }
+        .logo { font-size: 24px; font-weight: bold; color: var(--primary); }
+        nav a { margin-left: 20px; text-decoration: none; color: var(--dark); font-weight: 600; transition: 0.3s; }
+        nav a:hover { color: var(--primary); }
+        
+        /* Hero Section */
+        .hero { background: linear-gradient(135px, rgba(0, 119, 182, 0.9), rgba(0, 180, 216, 0.9)), url('neha.jpeg') no-repeat center center/cover; padding: 100px 5%; text-align: center; color: white; }
+        .hero h1 { font-size: 42px; margin-bottom: 15px; }
+        .hero p { font-size: 20px; margin-bottom: 25px; max-width: 700px; margin-left: auto; margin-right: auto; }
+        
+        /* Buttons */
+        .btn { display: inline-block; background: var(--accent); color: white; padding: 12px 30px; text-decoration: none; font-weight: bold; border-radius: 25px; transition: 0.3s; box-shadow: 0 4px 6px rgba(0,0,0,0.1); }
+        .btn:hover { background: #c1121f; transform: translateY(-2px); }
+        .btn-whatsapp { background: #25D366; }
+        .btn-whatsapp:hover { background: #128C7E; }
+
+        /* Sections */
+        section { padding: 80px 5%; }
+        .section-title { text-align: center; font-size: 32px; color: var(--primary); margin-bottom: 40px; position: relative; }
+        .section-title::after { content: ''; display: block; width: 50px; height: 3px; background: var(--accent); margin: 10px auto 0; }
+        
+        /* About Section layout */
+        .about-container { display: flex; align-items: center; gap: 50px; flex-wrap: wrap; }
+        .about-text { flex: 1; min-width: 300px; }
+        .about-img { flex: 1; min-width: 300px; text-align: center; }
+        .about-img img { max-width: 100%; border-radius: 15px; box-shadow: 0 5px 15px rgba(0,0,0,0.1); }
+
+        /* Grid Services */
+        .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 30px; }
+        .card { background: white; padding: 30px; border-radius: 10px; box-shadow: 0 4px 10px rgba(0,0,0,0.05); text-align: center; border-top: 4px solid var(--primary); transition: 0.3s; }
+        .card:hover { transform: translateY(-5px); }
+        .card h3 { margin-bottom: 15px; color: var(--primary); }
+
+        /* Transformations Layout */
+        .gallery-item { background: white; border-radius: 10px; overflow: hidden; box-shadow: 0 4px 10px rgba(0,0,0,0.1); transition: transform 0.3s ease; }
+        .gallery-item:hover { transform: scale(1.02); }
+        .gallery-item img { width: 100%; height: auto; display: block; border-bottom: 3px solid var(--primary); }
+        .gallery-desc { padding: 15px; text-align: center; font-weight: bold; background: #e2eafc; color: var(--primary); font-size: 16px; }
+
+        /* Footer */
+        footer { background: var(--dark); color: white; text-align: center; padding: 40px 5%; font-size: 14px; }
+        
+        /* Floating WhatsApp Button */
+        .floating-wa { position: fixed; bottom: 30px; right: 30px; background: #25D366; color: white; width: 60px; height: 60px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 30px; text-decoration: none; box-shadow: 0 4px 10px rgba(0,0,0,0.3); z-index: 1000; transition: 0.3s; }
+        .floating-wa:hover { transform: scale(1.1); }
+
+        @media (max-width: 768px) {
+            header { flex-direction: column; gap: 15px; }
+            nav a { margin: 0 10px; }
+            .hero h1 { font-size: 30px; }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header Navigation -->
+    <header>
+        <div class="logo">Maya Hospital</div>
+        <nav>
+            <a href="#about">About Dr. Neha</a>
+            <a href="#services">Treatments</a>
+            <a href="#results">Results</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <div class="hero">
+        <h1>Advanced Skin, Hair & Laser Clinic</h1>
+        <p>Get world-class dermatological treatments and non-surgical advanced procedures from Faridabad's leading specialist.</p>
+        <a href="https://wa.me/917028712538?text=Hello%20Dr.%20Neha,%20I%20want%20to%20book%20an%20appointment." class="btn" target="_blank">Book Appointment Now</a>
+    </div>
+
+    <!-- About Section -->
+    <section id="about">
+        <div class="about-container">
+            <div class="about-text">
+                <h2 class="section-title" style="text-align: left; margin-bottom: 20px;">Meet Dr. Neha Gupta</h2>
+                <p style="margin-bottom: 15px; font-size: 18px;"><strong>Senior Consultant Dermatologist & Dermatosurgeon</strong></p>
+                <p style="margin-bottom: 15px;">Dr. Neha Gupta is a highly dedicated skin specialist at Maya Hospital, known for providing outstanding clinical transformations. Specializing in advanced laser treatments, micro-surgery, and hair restoration therapies, she brings safe, clinical, and scientific precision to aesthetic care.</p>
+                <a href="tel:+917028712538" class="btn" style="background-color: var(--primary);">Call Clinic: 7028712538</a>
+            </div>
+            <div class="about-img">
+                <!-- Using desk photo here -->
+                <img src="desk.jpeg" alt="Dr. Neha Gupta at Maya Hospital Desk">
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" style="background-color: #f1f5f9;">
+        <h2 class="section-title">Our Specializations</h2>
+        <div class="grid">
+            <div class="card">
+                <h3>Mole & Wart Removal</h3>
+                <p>Safe, quick, and radiofrequency-based clean removal of moles, warts, and tags with minimal to no scarring.</p>
+            </div>
+            <div class="card">
+                <h3>Earlobe Repair</h3>
+                <p>Advanced, virtually painless repair of torn or widened earlobe piercings with clean clinical healing.</p>
+            </div>
+            <div class="card">
+                <h3>Advanced Hair Therapy</h3>
+                <p>Medical treatments designed to stop hair fall and stimulate natural hair regrowth on the scalp effectively.</p>
+            </div>
+            <div class="card">
+                <h3>Skin Pigmentation</h3>
+                <p>Targeted medical solutions for stubborn dark circles, patches, and hyperpigmentation for clear, even-toned skin.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Before/After Transformation Section -->
+    <section id="results">
+        <h2 class="section-title">Clinical Transformations (Before / After)</h2>
+        <p style="text-align:center; margin-bottom: 40px; color:#666; font-size: 18px;">Real patients. Real, verified clinical results by Dr. Neha Gupta.</p>
+        
+        <!-- Expanded Grid for all 8 patient images -->
+        <div class="grid" style="grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));">
+            
+            <div class="gallery-item">
+                <img src="ear.jpeg" alt="Earlobe Repair Before and After">
+                <div class="gallery-desc">Precision Earlobe Repair</div>
+            </div>
+
+            <div class="gallery-item">
+                <img src="hair.jpeg" alt="Hair Therapy Results">
+                <div class="gallery-desc">Hair Regrowth Therapy</div>
+            </div>
+
+            <div class="gallery-item">
+                <img src="lip.jpeg" alt="Lip Area Lesion Removal">
+                <div class="gallery-desc">Mole/Wart Removal (Lip Area)</div>
+            </div>
+
+            <div class="gallery-item">
+                <img src="eyes.jpeg" alt="Eye Area Skin Tag Removal">
+                <div class="gallery-desc">Lesion Clearing (Eye Area)</div>
+            </div>
+
+            <div class="gallery-item">
+                <img src="mouth.jpeg" alt="Oral Treatment Results">
+                <div class="gallery-desc">Oral/Lip Treatment</div>
+            </div>
+
+            <div class="gallery-item">
+                <img src="neck.jpeg" alt="Neck Lesion Clearing">
+                <div class="gallery-desc">Skin Lesion Removal (Neck)</div>
+            </div>
+
+            <div class="gallery-item">
+                <img src="cheek.jpeg" alt="Cheek Pigmentation Clearing">
+                <div class="gallery-desc">Facial Pigmentation Clearing</div>
+            </div>
+
+            <div class="gallery-item">
+                <img src="cheek2.jpeg" alt="Facial Spot Treatment">
+                <div class="gallery-desc">Clear Skin Treatment</div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Contact & Ad Landing Section -->
+    <section id="contact" style="background-color: var(--dark); color: white; text-align: center;">
+        <h2 class="section-title" style="color: white;">Book a Consultation</h2>
+        <p style="font-size: 20px; margin-bottom: 20px;">Ready for flawless skin and healthy hair?</p>
+        <p style="margin-bottom: 30px; color: #ccc;">📍 Maya Hospital, Faridabad<br>📞 Call/WhatsApp: <strong>7028712538</strong></p>
+        <a href="https://wa.me/917028712538?text=I%20saw%20your%20results%20online%20and%20want%20to%20book%20a%20consultation" class="btn btn-whatsapp" target="_blank">💬 Message on WhatsApp</a>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2026 Maya Hospital. All Rights Reserved. Designed for patient trust & care.</p>
+    </footer>
+
+    <!-- Floating Quick WhatsApp Icon for Mobile Users -->
+    <a href="https://wa.me/917028712538?text=I%20saw%20your%20results%20online%20and%20want%20to%20book%20a%20consultation" class="floating-wa" target="_blank">✉</a>
+
+</body>
+</html>
